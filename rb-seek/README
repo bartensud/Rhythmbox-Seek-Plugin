@@ -1,0 +1,43 @@
+rb-seek 0.1
+
+DESCRIPTION
+	rb-seek is a Rhythmbox plugin for seek backward and forward in current 
+	playing tack. It adds two entries in toolbar and menu "Control":
+	* Seek backward (shortcut: Control+Left)
+	* Seek forward (shortcut: Control+Right)
+
+INSTALLATION
+	Copy the folder "rb-seek" into "~/.gnome2/rhythmbox/plugins/".
+	If folder "plugins" is missing, just create it.
+	Alternatively copying the folder "rb-seek" to "/usr/lib/rhythmbox/plugins"
+	should work, too.
+
+SETTINGS
+	Default time for seeking backward/forward is 10 seconds. If you want
+	a different value, please open rb-seek.py in your installed plugins folder
+	and search for
+		self.seekTime = 10 # seek time in seconds. Adjust to your needs.
+	Set your desired seek time. Save the file. Restart Rhythmbox. Done.
+	
+DEPENDENCIES
+	This plugin was tested and developed within Rhythmbox 0.12.8 under 
+	Ubuntu 10.04 only. But should also work with other versions.
+
+KNOWN ISSUES
+	Rhythmbox seems not reply always the correct answer if the playing 
+	source is seekable. E.g. the tested MP3 streams failed to seek although
+	they were announced as seekable by Rhythmbox.
+
+LICENSE
+	rb-seek is dual licensed. 
+	You can choose yourself (which is important if you want to reuse the code):
+	* GPL 2: Needed as Rhythmbox is also GPLed.
+	* Apache License 2.0: In order for easy reuse of this code. 
+	  Feel free to use it where and how you want.
+
+AUTHOR
+	thomas.bartensud at googlemail.com. Feedback is welcome.
+
+THANKS
+	to the Tango project for the two icons I've used.
+

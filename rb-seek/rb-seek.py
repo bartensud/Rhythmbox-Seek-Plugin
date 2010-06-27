@@ -44,6 +44,7 @@ ui_str = """
   </toolbar>
   <menubar name="MenuBar">
     <menu name="ControlMenu" action="Control">
+	  <separator/>
       <menuitem name="SeekBack" action="SeekBack"/>
       <menuitem name="SeekForward" action="SeekForward"/>
     </menu>
